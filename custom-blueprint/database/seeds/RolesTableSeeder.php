@@ -15,14 +15,7 @@ class RolesTableSeeder extends Seeder
         foreach ($data as $obj) {
             Role::create(array(
                 'id' => $obj->id,
-                'name' => $obj->name,
-                'created_at' => $obj->created_at,
-                'created_by' => $obj->created_by,
-                'updated_at' => $obj->updated_at,
-                'updated_by' => $obj->updated_by,
-                'deleted_at' => $obj->deleted_at,
-                'deleted_by' => $obj->deleted_by,
-                'is_deleted' => $obj->is_deleted
+                'name' => $obj->name
             ));
         }
     }
